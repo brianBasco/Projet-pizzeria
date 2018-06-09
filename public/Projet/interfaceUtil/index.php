@@ -17,7 +17,7 @@
     <link href="../css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="interface">
 
   <?php
 
@@ -46,20 +46,25 @@
 	
 ?>
 
-          <div class="container inner">
+
+        <!-- -------------------- Header ----------------------- -->  
+        <div class="header-caisse container-fluid inner">
               <div class="row justify-content-end">
                 <div class="col-2 text-center">
-                  <h3 class="masthead-brand">Modifications</h3>
+                  <h3 class="masthead-brand">Interface</h3>
                 </div>
-                
+                <div class="col-3">
+                  <nav class="nav nav-masthead">
+                  <a class="nav-link" href="../caisse/index.php">caisse</a>
+                  </nav>
+                </div>
                 <div class="col-5">
                   <form method="post">
-                    <button class="btn btn-warning float-right" type="submit" name="deconnexion">Déconnexion</button>
+                    <button class="btn btn-warning float-right" type="submit" name="deconnexion">Déconnection</button>
                   </form>
-                  <a href="../caisse/index.php"><button class="btn btn-danger float-right">Caisse</button></a>
                 </div>
           </div> 
-        </div>
+        </div>                
         
         <!-- Le bouton ajouter ouvre une DIV Formulaire pour ajouter une nouvelle pizza -->
         <div>

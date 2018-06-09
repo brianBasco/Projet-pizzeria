@@ -1,6 +1,9 @@
 /*
  * Globals
  */
+body {
+  color: white;
+}
 
 /* Links */
 a,
@@ -19,19 +22,6 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-
-/*
- * Base structure
- */
-
-html,
-body {
-  background-color: #333;
-}
-
-body {
-  color: #fff;
-}
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -319,7 +309,6 @@ body {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
-  border: 1px solid green; 
 }
 
 .ajout .fermer:hover {
@@ -343,6 +332,10 @@ body {
 }
 
 /* ----------------------------------CSS DE COMPTABILITE ------------------------- */
+body.comptabilite {
+  background-color: #333;
+}
+
 .comptabilite .master {
   margin: 0 auto;
   width: 50%;
@@ -370,7 +363,7 @@ body {
   padding: 20px;
 }
 
-.comptabilite form {
+.comptabilite .form {
 	border: 1px solid white;
 	border-radius: 10px;
 	padding: 20px;
@@ -453,6 +446,7 @@ body {
 
 .unePizza .reset {
   background-color: rgb(0, 255, 13);
+  width: 70px;
 }
 
 .btn-plus{
@@ -473,3 +467,7 @@ body {
   background-color: white;
 }
 
+/* ----------------- CSS interface -------------------- */
+body.interface {
+  background-color: #3d6cdd;
+}

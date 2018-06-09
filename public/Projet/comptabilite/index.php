@@ -2,8 +2,11 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />    
     <meta name="description" content="comptabilite">
+    
+		
 
     <!-- mettre une icone de caisse -->
     <link rel="icon" href="../../../../favicon.ico">
@@ -43,33 +46,33 @@
 
 	
 ?>
+   
 
-  
-    <!-- ------------------NAVIGATION -------------------- -->
-    <div class="container inner">
-        <div class="row justify-content-end">
-            <div class="col-2 text-center">
-                <h3 class="masthead-brand">Caisse</h3>
-            </div>
-            <div class="col-3">
-                <nav class="nav nav-masthead">
-                <a class="nav-link" href="../caisse/index.php">Caisse</a>
-                <a class="nav-link" href="../interfaceUtil/index.php">Administration</a>
-                </nav>
-            </div>
-            <div class="col-5">
-            <form method="post">
-            <button class="btn btn-warning float-right" type="submit" name="deconnexion">Déconnexion</button>
-            </form>
-            </div>
-        </div> 
-    </div>        
+    <!-- -------------------- Header ----------------------- -->  
+          <div class="header-caisse container-fluid inner">
+              <div class="row justify-content-end">
+                <div class="col-2 text-center">
+                  <h3 class="masthead-brand">Caisse</h3>
+                </div>
+                <div class="col-3">
+                  <nav class="nav nav-masthead">
+                  <a class="nav-link" href="../caisse/index.php">Caisse</a>
+                    <a class="nav-link" href="../interfaceUtil/index.php">Administration</a>
+                  </nav>
+                </div>
+                <div class="col-5">
+                  <form method="post">
+                    <button class="btn btn-warning float-right" type="submit" name="deconnexion">Déconnection</button>
+                  </form>
+                </div>
+          </div> 
+        </div>                
 
     <!-- -----------------------------Contenu principal, class master ---------------- -->
     <div class="master">
     <!-- -----------------------------FORMULAIRE DES REQUTES -------------------------- -->
     <!-- Afficher le grand livre comptable des commandes par période -->
-    <form method="POST" action="requete.php">        
+    <form method="POST" action="requete.php" class="form">        
         <h1 class="inline">afficher TOUT</h1>
 
         <div class="btn-form">
@@ -78,7 +81,7 @@
 
     </form>
 
-    <form method="POST" action="requete.php">
+    <form method="POST" action="requete.php" class="form">
         <h1>Sélectionner la période</h1>
 
         <label for="date">debut</label>

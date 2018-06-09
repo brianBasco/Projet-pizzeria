@@ -49,7 +49,7 @@
           <div class="header-caisse container-fluid inner">
               <div class="row justify-content-end">
                 <div class="col-2 text-center">
-                  <h3 class="masthead-brand">Caisse</h3>
+                  <h3 class="masthead-brand">Commandes</h3>
                 </div>
                 <div class="col-3">
                   <nav class="nav nav-masthead">
@@ -65,7 +65,8 @@
           </div> 
         </div>        
 <!-- -----------------------------form ----------------------- -->
-
+<div class="container-fluid">
+<div class="row">
   <div class="main col-6">   
 
       <div id="tableauPizzas">
@@ -81,6 +82,7 @@
       <button class="btn reset" onclick="reset()">Reset</button>
     </div>
   </div>
+  
 
 <!-- -----------------------------Affichage des commandes du jour --------------------- -->
   <div id="commandesEnCours" class="commandesEncours col-6">
@@ -89,6 +91,9 @@
     include("reqEncours.php");
   ?>
 
+  </div>
+
+  </div>
   </div>
 
 
