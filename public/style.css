@@ -1,0 +1,453 @@
+body { 
+  font-family: 'Oswald', sans-serif;
+  }
+
+a {
+	color: inherit;
+}
+
+a:focus, a:hover {
+	text-decoration: none;
+	cursor: grab;
+    color: inherit;
+    
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/* lignes séparatrices */
+hr {	
+	margin-top: 5px;
+	margin-bottom: 0;
+	border-top: 2px solid #b3a792;
+	
+}
+
+header {
+	background-color: white;
+}
+
+
+.titre {	
+    background: white; /* For browsers that do not support gradients */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1e767+0,feb645+100;Yellow+3D */
+background: rgb(241,231,103); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.logo{  
+  text-align: center;
+}
+
+.logo a {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 60px;
+  color: black;
+}
+
+.font-effect-3d-float {
+    text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em 0.021em rgba(0,0,0,0.1), 0px 0.32em 0.32em rgba(0,0,0,0.1);
+	
+}
+
+.signature{
+  position: relative;
+  height: 48px;
+}
+
+.signature p {
+  font-family: 'Rock Salt', cursive;
+  text-align: center;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 10px;
+}
+
+
+.nav-primary .container,
+.langage .container{
+  width: 300px;
+  margin: 0 auto;
+}
+
+.langage{
+  padding-top: 10px;
+}
+
+
+.nav-primary a {
+	font-size: 20px;
+	padding: 8px;
+	margin-right: 15px;
+	border:1px solid black;
+	border-radius: 2px;
+	transition: all linear 0.2s;
+}
+
+.nav-primary a:hover {
+	background-color: black;
+	color: white;
+}
+
+.dropdown:hover {
+	cursor: pointer;
+}
+
+#philosophie h1 {
+    font-size: 50px;
+  	text-shadow: 4px 4px 4px #aaa;
+}
+
+#philosophie p {
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+#philosophie {
+		padding-top: 60px; 
+}
+
+#philosophie .container{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+footer {
+	height: 70px;
+}
+
+footer p {
+	width: 70%;
+	display: inline-block;
+}
+
+.footer-primary {
+  padding-top: 20px;
+}
+
+.nfa017 {
+	font-size: 18px;
+	text-decoration: underline;
+	transition-duration: 0.3s;
+}
+
+.nfa017:hover {
+	font-size: 20px;
+}
+
+/* Style du bouton de navigation */
+#navigation-button {
+    display: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 8px;
+    background-color: #000000;
+    border: 2px solid wheat;
+    border-radius: 4px;
+}
+
+#navigation-button hr{
+	margin-top: 8px;
+	margin-bottom: 0;    
+  width: 50px;    
+  border-top: 2px solid wheat;  
+}	
+
+/* Fin du style du bouton de navigation */
+
+/*Style de menu de navigation */
+#navigation-menu{
+  padding-left: 5px;
+  padding-right: 5px;
+	margin: 0;		
+	width: 100%;	
+	height: 0;
+	overflow: hidden;	
+  transition: 0.3s;  
+}
+
+#navigation-menu ul {
+  padding-left: 10px;
+}
+
+#navigation-menu li{
+	font-size: 1.2rem;
+	list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid wheat;
+}
+
+#navigation-menu a{
+  display: block;
+}
+
+/*Fin du style de menu de navigation */
+
+
+.main-content{
+	position: relative;
+}
+
+.hero {
+	overflow: hidden;
+}
+
+.hero.tel {
+	position: absolute;
+	top: 40px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	padding: 10px;
+}
+
+.hero .tel .contenu {
+  position: relative;
+  left: 25%;
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.btn-tel {
+  font-size: 30px;
+  background: transparent;
+  text-shadow: 2px 2px 2px black;
+  box-shadow:3px 5px #393636;
+  border: none;
+}
+
+.hero-primary {
+	font-size: 40px;
+	color: wheat;	
+    position: absolute;
+    top: 200px;    
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+.hero-primary p {
+  text-shadow: 0px 3px 6px black;
+}
+
+
+.font-3d {
+    text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em 0.021em rgba(0,0,0,0.1), 0px 0.32em 0.32em rgba(0,0,0,0.1);
+	
+}
+
+/* Animation image index Home */
+#fleurette {
+	width: 100%;
+	opacity: 0.8;
+
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 65s;
+
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 65s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  /* WebKit and Opera browsers */
+  @-webkit-keyframes spinner {
+    0% { -webkit-transform: scale(1, 1);    }
+	50%   { -webkit-transform: scale(1.1, 1.1); }
+	100%   { -webkit-transform: scale(1, 1); }
+  }
+
+  /* all other browsers */
+  @keyframes spinner {
+    0% {
+      -moz-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      transform: scale(1, 1);
+      
+    }
+    50% {
+      -moz-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+	}
+	100% {
+		-moz-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+	  }
+	
+  }
+
+  /* Fin de l'Animation image index Home */
+
+   
+/* CSS de flip images */
+
+#flip-container .col-sm-4{
+  padding: 20px;
+}
+
+.flip {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.flip img {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transition: all ease-in-out 0.6s;
+  -moz-transition: all ease-in-out 0.6s;
+  -o-transition: all ease-in-out 0.6s;
+  transition: all ease-in-out 0.6s;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip:hover img,
+.flip.hover img
+{
+  -webkit-transform: rotatex(180deg);
+  -moz-transform: rotatex(180deg);
+  -o-transform: rotatex(180deg);
+  transform: rotatex(180deg);
+  
+}
+
+
+.flip:hover .derriere,
+.flip.hover .derriere {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+
+ .derriere {
+  width: 400px;
+  height: 400px;
+  background-color: yellow;
+
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-transform: rotatex(180deg);
+  -moz-transform: rotatex(180deg);
+  -o-transform: rotatex(180deg);
+  transform: rotatex(180deg);
+
+  -webkit-transition: all ease-in-out 0.6s;
+  -moz-transition: all ease-in-out 0.6s;
+  -o-transition: all ease-in-out 0.6s;
+  transition: all ease-in-out 0.6s;
+}
+
+/* Fin de flip images */
+
+
+
+/* CSS de lieux */
+
+#lieux {
+  position: relative;
+  background-color: #0B0B09;
+  color: white;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+#lieux .container{
+  position: relative;
+  margin-top:30px;
+  font-size: 1.4rem;
+  border: 1px solid wheat;
+  border-radius: 4px;
+  
+}
+
+#lieux .container:hover{
+  cursor: pointer;
+}
+
+
+#cercle {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+  background-color: yellow;
+  opacity: 0.5;
+}
+
+#cercle p{
+  color: black;
+  position: absolute;
+  top: 55px;
+  
+}
+
+/* Fin de CSS de lieux */
+
+/* CSS de CARTE */
+.carte {
+  color: rgb(51, 51, 51);
+}
+
+.carte .jumbotron-primary {
+margin-bottom: 0;
+  background: white; /* For browsers that do not support gradients */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f1e767+0,feb645+100;Yellow+3D */
+background: rgb(241,231,103); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.carte .remarque {   
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;    
+  color: grey;
+  }
+
+.carte .remarque p {
+  margin: 0;
+}
+
+.carte small{
+  padding-top: 15px;
+  font-size: 100%;
+  font-family: "Helvetica Neue", Helvetica;
+}
+
+/* Fin de CSS de CARTE */

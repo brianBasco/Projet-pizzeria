@@ -1,0 +1,475 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  background-color: #333;
+}
+
+body {
+  color: #fff;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: bold;
+  color: rgba(255,255,255,.5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: left;
+  }
+}
+/*
+ * Label
+ */
+.label {
+  margin-bottom: 0;
+}
+
+/*
+ * Cover
+ */
+
+ .caisse .cover {
+  margin-top: 5px;
+}
+
+.cover .btn {
+    font-size: 1.5rem;
+  }
+  
+.cover .btn-lg {
+  font-weight: bold;
+}
+
+
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 42rem;
+  }
+}
+
+/*-- CSS du formulaire PHP */
+
+.formPHP {
+  margin: 15px 10px;
+  padding: 20px;
+}
+
+.formPHP input {
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  padding: 10px;
+}
+
+.formPHP .full-width {
+  width: 100%;
+}
+
+.formPHP .reponse p, .reponse span{
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .FormPHP{
+        padding: 0;
+    }
+
+    .caisse .cover .btn {
+      font-size: 1rem;
+      width: 100%;
+    }
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {  }
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {  }
+
+/* Extra large devices (large desktops)
+ No media query since the extra-large breakpoint has no upper bound on its width */
+
+/* CSS de la page authentification */
+.authentification {
+  padding: 100px 0;
+  /*background: linear-gradient(to bottom, rgba(241,231,103,1) 0%,rgba(254,182,69,1) 100%);*/
+  background: linear-gradient(to bottom, rgb(103, 139, 241) 0%,rgb(69, 254, 84) 100%);
+}
+
+.authentification form {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.authentification fieldset {
+  border: 4px solid black; 
+  box-shadow: 4px 4px 5px #383c3e;
+  background-color: #3d6cdd;
+}
+
+.authentification legend {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5px;
+  position: relative;
+  text-shadow: 2px 2px 2px black;
+}
+
+.authentification label {
+  display : inline-block;
+  width: 200px;
+}
+
+.authentification div {
+  padding: 10px 0;
+}
+
+.authentification input {
+  width: 300px;
+  border-radius: 3px;
+  border: none;
+  height: 30px;
+  padding-left: 3px;
+}
+
+.authentification input:focus {
+  border:1px solid rgb(0, 255, 0);
+}
+
+.authentification input.bouton {
+  color: white;
+  border: 1px solid black;
+  background-color: #2f833c;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+  transition: all linear 0.1s;
+}
+
+.authentification input.bouton:hover {
+  background-color: #65a76f;
+}
+
+.authentification input.bouton:focus {
+  box-shadow: unset;
+}
+
+.authentification .reponse {
+  text-align: center;  
+  color: #631010;
+  font-style: oblique;
+  text-shadow: none;
+}
+
+/* CSS de la balise AJOUT */
+
+.ajout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 50px;
+  color:white;
+  display: none;
+  background-color: rgba(0,0,0,.9);
+}
+
+.ajout form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ajout input {
+  display: block;
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 3px;
+  margin: 15px auto;
+  padding-left: 3px;
+}
+
+.ajout .fermer {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid green; 
+}
+
+.ajout .fermer:hover {
+  cursor: pointer;
+}
+
+.ajout input.bouton {
+  color: white;
+  border: 1px solid black;
+  background-color: #2f833c;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+  transition: all linear 0.1s;
+}
+
+.ajout input.bouton:hover {
+  background-color: #65a76f;
+}
+
+.ajout input.bouton:focus {
+  box-shadow: unset;
+}
+
+/* ----------------------------------CSS DE COMPTABILITE ------------------------- */
+.comptabilite .master {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.comptabilite table  {
+  margin: 0 auto;
+}
+
+.comptabilite th  {
+  text-align: center;
+}
+
+.comptabilite td, .comptabilite tr {
+  padding: 5px 10px;
+}
+
+.comptabilite .resultats {
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 4px black;
+  padding: 20px;
+}
+
+.comptabilite form {
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 0 0 20px 0;
+  text-align: center;
+  position: relative;
+  background-color: #425ed7cc;
+}
+
+.comptabilite .btn-form {   
+  position: absolute;
+  right: 5px;
+  display: inline-flex;
+}
+
+.comptabilite .inline {
+  display: inline;
+}
+
+.validerCommande {
+  display: none;
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);		
+}
+
+
+/* ------------------ CSS de caisse --------------------- */
+.uneQte {
+	width: 50px;
+	text-align: center;
+}
+
+.caisse {
+	background: linear-gradient(to bottom, rgb(103, 139, 241) 0%,rgb(22, 71, 158) 100%);
+}
+
+.header-caisse {
+  margin-bottom: 30px;
+  background-color: #637bff;
+	box-shadow: 0 0 2px 3px black;
+}
+
+.commandesEncours {
+	text-align: center;
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	border: 2px solid black;
+	box-shadow: 2px 2px 4px black;
+	padding: 20px;
+}
+
+.commandesEncours .prepare {
+  text-decoration: line-through;
+}
+
+
+.unePizza {
+  padding: 10px;
+}
+
+.unePizza .btn {
+  margin: 0px 5px;
+  color: #000;	
+  border-color: none;
+  box-shadow: 2px 3px 2px -1px black;
+  height: 40px;
+  vertical-align: top;
+  width: 55px;
+}
+
+.unePizza .valider {
+  background-color: coral;
+  margin: 0;
+  width: 200px;
+}
+
+.unePizza .reset {
+  background-color: rgb(0, 255, 13);
+}
+
+.btn-plus{
+  background-color: #00ff03;
+}
+
+.btn-moins {
+  background-color: #e91f4b;
+}
+
+.unePizza input {
+	overflow: visible;
+	border: none;
+	padding: 6px;
+  border-radius: 2px;
+  height: 40px;
+  vertical-align: sub;
+  background-color: white;
+}
+

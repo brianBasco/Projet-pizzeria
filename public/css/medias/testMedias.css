@@ -1,0 +1,92 @@
+/* LESS THAN */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {}
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+
+	.logo {	
+		text-align: left;
+		position: relative;
+	}
+
+	.logo a{
+		font-size: 50px;
+	}
+
+	.md-collapse{
+			display: none;
+	}
+
+	.md-appear {
+		display: block;
+	}
+		
+	#navigation-button {
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 17px;
+	}
+
+	.hero.tel {
+	position: absolute;
+	top: 50px;
+	color: white;
+	font-size: 40px;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+	.hero-primary{
+		font-size: 1.3rem;
+		padding: 15px;
+		position: static;
+		background-color: #140f01;
+	}
+
+	.hero-primary div{
+		margin-top: 20px;
+		padding: 20px;
+		border: 1px solid wheat;
+		border-radius: 5px;
+	}
+
+	.signature-md {
+		position: absolute;
+		top: 20px;
+		color: white;
+		font-size: 12px;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+	}
+	
+	#fleurette {
+		animation: none;
+	}
+
+	#philosophie h1{
+		font-size: 40px;
+	}
+
+	.footer-primary div{
+		padding: 10px;
+	}
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {}
+
+
+/* MEDIA AT MIN WIDTH */
+@media (min-width: 992px) {
+	.md-appear {
+		display: none;
+	}
+}

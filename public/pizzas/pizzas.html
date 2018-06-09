@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<title>Nos pizzas</title>
+		
+		<!-- CSS -->
+        <link href="../bootstrapV4/css/bootstrap.css"	rel="stylesheet" />
+        <link href="../style.css" rel="stylesheet" /> <!-- css de la landing-page -->
+        <!--
+        <link href="../style-pizzas.css" rel="stylesheet" /> --> <!-- css du jumbotron -->
+        <!--
+        <link href="../css/medias/testMedias.css" rel="stylesheet" />
+        -->
+        <!--<link href="headers-medias.css" rel="stylesheet" />--> <!-- CSS du header suivant les différents viewport -->
+          
+        <!--  Fonts ---------------------------------------- -->    
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> <!-- style du nav -->
+        <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"> <!-- style du pizzas traditionnelles au feu de bois -->
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&effect=3d-float" rel="stylesheet"> <!-- Marque, logo -->
+        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet"> <!-- style de notre philosophie -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- style des boutons -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"  /> <!-- style des containers -->
+	</head>
+	
+	<body>
+        
+            <header id="header">
+            
+                <div class="titre container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="logo">					
+                                <a class="font-effect-3d-float" href="../index.html">PEPINO</a>
+    
+                                <!-- bouton de navigation -->
+                                
+                            <button id="navigation-button" onclick="ouvrirMenu()">
+                                <span class="sr-only">Toggle navigation</span>
+                                <hr>
+                                <hr>
+                                <hr>
+                            </button>
+    
+                            </div>						
+                        </div>
+    
+                        <div class="col-lg-6 md-collapse langage">
+                            <div class="container">
+                                <span>Langue : 
+                                    <a href="/">Français</a>
+                                    <a href="/english">English</a>
+                                    <a href="/deutsch">Deutsch</a>
+                                </span>
+                            </div>
+                        </div>							
+                    </div>
+    
+                        <div class="row">
+                            <div class="col-lg-6 md-collapse">
+                                <div class="signature">
+                                    <p>Ses pizzas traditionnelles au feu de bois</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-6 md-collapse nav-primary">
+                                <div class="container">			
+                                    <nav>									
+                                        <a href="../index.html">Home</a>
+                                        <a href="../lieux/lieux.html">Lieux</a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>																
+    
+                                
+                </div><!-- fin du titre -->
+    
+             <!-- Menu déroulant de navigation -->			
+             <div id="navigation-menu">
+                 <ul>
+                    <li onclick="fermerContenu()"><a href="pizzas.html">Nos pizzas</a></li>
+                    <li onclick="fermerContenu()"><a href="../lieux/lieux.html" >Nos lieux</a></li>
+                    <li id="langues"  onclick="ouvrirLangues()">Langues<span class="caret"></span></li>
+                    <ul id="langues-contenu">
+                         <li>Français</li>
+                         <li>Anglais</li>
+                         <li>Allemand</li>
+                    </ul>
+                </ul>
+            </div>					
+                
+            <!-- Fin du Menu déroulant de navigation -->			
+    
+            </header><!-- Fin du header -->
+		
+		
+
+
+		<div id="remarque" class="container text-center">
+            <p>Passez commande dès 17h afin de choisir votre heure de retrait</p>		 				
+        </div>
+    
+    <div id="menu" class="jumbotron jumbotron-primary text-center">
+    
+          <div class="page-header">
+            <h1>LA CARTE</h1>
+          </div>
+    
+          <div class="lead">
+              <p>Taille unique</p>
+          </div>
+          
+          <div id="pizzas" class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                        <h2>FLEURETTE • 8</h2>
+                        <p>Tomate, emmental, mozzarella, olives</p>
+                        
+                        <h2>L'ALSACIENNE • 8</h2>
+                        <p>Crème, oignons, lardons</p>
+                        
+                        <h2>MARGUERITE • 9</h2>
+                        <p>Tomate, jambon, emmental, mozzarella, olives</p>			
+                    
+                        <h2>FORESTIERE • 9</h2>
+                        <p>Tomate, champignons, emmental, mozzarella, olives</p>
+                        
+                        <h2>NAPOLITAINES • 9</h2>
+                        <p>Tomate, anchois, câpres, emmental, mozzarella, olives</p>		
+                    
+                        <h2>ROYALE • 9.50</h2>
+                        <p>Tomate, jambon, champignons, emmental, mozzarella, olives</p>	
+                    </div>				
+                            
+                    <div class="col-lg-6">	
+                        <h2>PAYSANNE • 9.50</h2>
+                        <p>Tomate, lardons, champignons, emmental, mozzarella, olives</p>
+                        
+                        <h2>REINE • 9.50</h2>
+                        <p>Tomate, champignons, chorizo, emmental, mozzarella, olives</p>
+                        
+                        <h2>CALZONE <span>Ma spécialité</span> • 10</h2>
+                        <p>Tomate, jambon, champignons, crème fraîche, oeuf, emmental, mozzarella</p>			
+                    
+                        <h2>YOYO • 10</h2>
+                        <p>Tomate, emmental, chèvre, roquefort, mozzarella, olives</p>
+                        
+                        <h2>LA REBLOCH • 10.50</h2>
+                        <p>Crème, oignons, patates, fromage, lardons,reblochon, jambon cru</p>
+                        
+                        <h2>SAUMON • 11</h2>
+                        <p>Crème fraîche, saumon fumé <span>200gr</span>, emmental, mozzarella, citron</p>
+                    </div>
+                </div>		
+          </div>
+          
+          <hr>
+          
+           <div class="container">
+               <small>Taxes et service inclus, prix en euros TTC. Espèces et chèques acceptés.</small>
+           </div>
+    
+        </div><!-- End of JUMBOTRON -->
+        
+        <!-- Flip images -->
+        <div id="flip-container" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                      <div ontouchstart="this.classList.toggle('hover');" class="flip">                    
+                        <img src="css/pizzas/pizza-0.jpg" />
+                        <div class="derriere">
+                            <h2>FLEURETTE • 8</h2>
+                            <p>Tomate, emmental, mozzarella, olives</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-4">
+                        <div ontouchstart="this.classList.toggle('hover');" class="flip">                    
+                            <img src="css/pizzas/pizza-0.jpg" />
+                            <div class="derriere">
+                                <h2>FLEURETTE • 8</h2>
+                                <p>Tomate, emmental, mozzarella, olives</p>
+                            </div>
+                          </div>
+                  </div>
+    
+                  <div class="col-sm-4">
+                        <div ontouchstart="this.classList.toggle('hover');" class="flip">                    
+                            <img src="css/pizzas/pizza-0.jpg" />
+                            <div class="derriere">
+                                <h2>FLEURETTE • 8</h2>
+                                <p>Tomate, emmental, mozzarella, olives</p>
+                            </div>
+                        </div>
+                  </div>
+            </div>
+    
+            <div class="row">
+                    <div class="col-sm-4">
+                          <div ontouchstart="this.classList.toggle('hover');" class="flip">                    
+                            <img src="css/pizzas/pizza-0.jpg" />
+                            <div class="derriere">
+                                <h2>FLEURETTE • 8</h2>
+                                <p>Tomate, emmental, mozzarella, olives</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-4">
+                            <div ontouchstart="this.classList.toggle('hover');" class="flip">                    
+                                <img src="css/pizzas/pizza-0.jpg" />
+                                <div class="derriere">
+                                    <h2>FLEURETTE • 8</h2>
+                                    <p>Tomate, emmental, mozzarella, olives</p>
+                                </div>
+                              </div>
+                      </div>
+        
+                      <div class="col-sm-4">
+                            <div ontouchstart="this.classList.toggle('hover');" class="flip">                    
+                                <img src="css/pizzas/pizza-0.jpg" />
+                                <div class="derriere">
+                                    <h2>FLEURETTE • 8</h2>
+                                    <p>Tomate, emmental, mozzarella, olives</p>
+                                </div>
+                            </div>
+                      </div>
+                </div>
+    
+                <div class="row">
+                        <div class="col-sm-4">
+                              <div ontouchstart="this.classList.toggle('hover');" class="flip">                    
+                                <img src="css/pizzas/pizza-0.jpg" />
+                                <div class="derriere">
+                                    <h2>FLEURETTE • 8</h2>
+                                    <p>Tomate, emmental, mozzarella, olives</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-sm-4">
+                                <div ontouchstart="this.classList.toggle('hover');" class="flip">                    
+                                    <img src="css/pizzas/pizza-0.jpg" />
+                                    <div class="derriere">
+                                        <h2>FLEURETTE • 8</h2>
+                                        <p>Tomate, emmental, mozzarella, olives</p>
+                                    </div>
+                                  </div>
+                          </div>
+            
+                          <div class="col-sm-4">
+                                <div ontouchstart="this.classList.toggle('hover');" class="flip">                    
+                                    <img src="css/pizzas/pizza-0.jpg" />
+                                    <div class="derriere">
+                                        <h2>FLEURETTE • 8</h2>
+                                        <p>Tomate, emmental, mozzarella, olives</p>
+                                    </div>
+                                </div>
+                          </div>
+                    </div>
+        
+              </div><!-- FIn du CONTAINER-FLUID -->
+    
+        <!-- FIn de de Flip images -->
+				
+		<!-- FOOTER -->
+			
+		<footer class="container-fluid">
+			<hr>
+			
+			<div class="row footer-primary">
+				<div class="col-sm-4 order-sm-1 text-center">
+					<a class="nfa017" href="Projet/formulaire.html">Contactez nous</a>
+				</div>				
+				<div class="col-sm-4 order-sm-3 text-center">
+					<a class="nfa017" href="/modifCarte">Connexion</a>
+				</div>
+				<div class="col-sm-4 order-sm-2 text-center">
+					<p>Theme Made By <a href="#">S&P.com&copy</a></p>
+				</div>
+			</div>
+		</footer><!-- End of FOOTER -->
+		
+		
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="../bootstrapV4/js/bootstrap.js"></script>
+
+		<script src="../js/affichageLieux.js"></script>
+		<script src="../js/ouvrirMenu.js"></script>
+		
+    </body>
+</html>

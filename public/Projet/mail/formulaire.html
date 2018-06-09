@@ -1,0 +1,53 @@
+<DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>NFA017 - Formulaire de contact</title>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <form method="POST" action="mail.php">
+           
+                <div class="header">Contactez nous</div>
+              
+                <div class="row">
+                <label for="nom">Nom <span class="required">*</span> </label>
+                <input type="text" name="nom" id="nom" placeholder="Votre nom"/>
+                </div>
+                <div class="row">
+                <label for="adresseMail">Votre Mail <span class="required">*</span> </label>
+                <input type="email" name="adresseMail" id="adresseMail" placeholder="Votre adresse e-mail" onblur="verif_envoi()"/>
+                </div>
+                <div id="explication">                    
+                </div>
+                <div class="row">
+                <label for="sujet">Sujet <span class="required">*</span></label>
+                <input type="text" name="sujet" id="sujet" />
+                </div>
+                <div class="row">
+                <label for="message">message <span class="required">*</span></label>
+                <input type="textarea" name="message" id="message" />
+                </div>
+                <div class="row">
+                <label></label> <!-- etiquette vide pour aligner le bouton ci-dessous -->
+                <input class="btn" type="submit" name="submit" disabled="disabled" value="Envoyer" id="envoi"/>
+               
+                </div>
+                      
+        </form>
+
+                <div class="bloc_reponse">
+                     <a href="../../index.html"><button class="btn">Retour</button></a>
+                </div>
+
+
+        <script type="text/javascript" src="js/verif_envoi.js" ></script>
+
+    </body>   
+</html>
