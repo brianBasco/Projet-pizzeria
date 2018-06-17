@@ -24,9 +24,9 @@ try {
             echo '<div class="resultat">
                     <form method="POST" action="barrer.php">
                     <input name="id" value="'.$req["id"].'" style="display:none" />
-                    <input type="text" value="'.$req["nom"].'" readonly />
-                    <input type="text" value="'.$req["modifs"].'" readonly />
-                    <input type="text" value="'.$req["nomCommande"].'" readonly />
+                    <input class="encours" type="text" value="'.$req["nom"].'" readonly />
+                    <input class="encours" type="text" value="'.$req["modifs"].'" readonly />
+                    <input class="encours" type="text" value="'.$req["nomCommande"].'" readonly />
                     <button type="submit" name="envoyer">X</button>
                     </form>
                 </div>';
@@ -34,10 +34,11 @@ try {
 
         else {
             echo '<div class="resultat">
-                    
-                    <input class="prepare" type="text" value="'.$req["nom"].'" readonly />
-                    <input class="prepare" type="text" value="'.$req["modifs"].'" readonly />
-                    <input class="prepare" type="text" value="'.$req["nomCommande"].'" readonly />
+                                        
+                    <input class="encours prepare" type="text" value="'.$req["nom"].'" readonly />
+                    <input class="encours prepare" type="text" value="'.$req["modifs"].'" readonly />
+                    <input class="encours prepare" type="text" value="'.$req["nomCommande"].'" readonly />
+                    <hr>
                     
                 </div>';
         }
@@ -49,3 +50,4 @@ catch (PDOException $e) {
 }
 
 ?>
+

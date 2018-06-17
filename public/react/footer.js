@@ -9,7 +9,7 @@ const Footer = () => {
 					<a className="nfa017" href="Projet/mail/formulaire.html">Contactez nous</a>
 				</div>				
 				<div className="col-sm-4 order-sm-3 text-center">
-					<a className="nfa017" href="Projet/caisse/index.php">Connection</a>
+					<a className="nfa017" href="Projet/caisse/index.php">Connexion</a>
 				</div>
 				<div className="col-sm-4 order-sm-2 text-center">
 					<p>Theme Made By S&P.com&copy; <Annee /> </p>

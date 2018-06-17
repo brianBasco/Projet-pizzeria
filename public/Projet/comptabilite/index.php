@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />    
+	  <meta name="viewport" content="width=device-width, initial-scale=1" />    
     <meta name="description" content="comptabilite">
     
 		
@@ -62,7 +62,7 @@
                 </div>
                 <div class="col-5">
                   <form method="post">
-                    <button class="btn btn-warning float-right" type="submit" name="deconnexion">Déconnection</button>
+                    <button class="btn btn-warning float-right" type="submit" name="deconnexion">déconnexion</button>
                   </form>
                 </div>
           </div> 

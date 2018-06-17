@@ -419,8 +419,11 @@ body.comptabilite {
 	padding: 20px;
 }
 
-.commandesEncours .prepare {
-  text-decoration: line-through;
+.commandesEncours hr {
+  position: relative;
+  top: -28px;
+  width: 70%;
+  height: 0px;
 }
 
 
@@ -466,6 +469,12 @@ body.comptabilite {
   vertical-align: sub;
   background-color: white;
 }
+
+.resultat .encours {
+  background: transparent;
+  border: none;
+}
+
 
 /* ----------------- CSS interface -------------------- */
 body.interface {
